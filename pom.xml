@@ -8,13 +8,13 @@
         <version>3.2.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example</groupId>
-    <artifactId>CityLibraryWebAPI</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>CityLibraryWebAPI</name>
-    <description>CityLibraryWebAPI</description>
+    <groupId>miu.cs489.ads</groupId>
+    <artifactId>springAPI-mysql-docker</artifactId>
+<!--    <version>0.0.1</version>-->
+    <name>ADSDentalSurgeryRestAPI</name>
+    <description>Dental Surgery RestAPI</description>
     <properties>
-        <java.version>21</java.version>
+        <java.version>17</java.version>
     </properties>
     <dependencies>
         <dependency>
@@ -35,7 +35,6 @@
         <dependency>
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
-            <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -60,6 +59,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
+<!--                    <imageName>localhost:8080/ADSRestAPI:latest</imageName>-->
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>
@@ -69,6 +69,7 @@
                 </configuration>
             </plugin>
         </plugins>
+        <finalName>springAPI-mysql-docker</finalName>
     </build>
 
 </project>
